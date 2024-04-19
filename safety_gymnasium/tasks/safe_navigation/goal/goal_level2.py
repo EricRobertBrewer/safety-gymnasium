@@ -24,7 +24,8 @@ class GoalLevel2(GoalLevel1):
         super().__init__(config=config)
         # pylint: disable=no-member
 
-        self.placements_conf.extents = [-2, -2, 2, 2]
+        # self.placements_conf.extents = [-2, -2, 2, 2]
+        self.placements_conf.extents = [-1, -1, 1, 1]
 
         self.hazards.num = 10
         self.vases.num = 10

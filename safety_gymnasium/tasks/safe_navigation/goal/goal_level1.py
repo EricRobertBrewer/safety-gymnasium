@@ -28,7 +28,8 @@ class GoalLevel1(GoalLevel0):
     def __init__(self, config) -> None:
         super().__init__(config=config)
 
-        self.placements_conf.extents = [-1.5, -1.5, 1.5, 1.5]
+        # self.placements_conf.extents = [-1.5, -1.5, 1.5, 1.5]
+        self.placements_conf.extents = [-1, -1, 1, 1]
 
         self._add_geoms(Hazards(num=8, keepout=0.18))
         self._add_free_geoms(Vases(num=1, is_constrained=False))
